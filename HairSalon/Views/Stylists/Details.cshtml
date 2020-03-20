@@ -15,12 +15,12 @@
   <p>no clients found</p>
 }
 
-@* @foreach (Client client in @Model.Clients)
+@foreach (Client client in @Model.Clients)
 {
-  <li>Description: @client.Description</li>
-} *@
+  <li>Description: @client.Name</li>
+}
 </ul>
 
-<p>@Html.ActionLink("Back to categories", "Index")</p>
-<p>@Html.ActionLink("Edit Category", "Edit", new { id = Model.StylistId })</p>
-<p>@Html.ActionLink("Delete Category", "Delete", new { id = Model.StylistId })</p>
+<p>@Html.ActionLink("Back to stylist", "Index")</p>
+<p>@Html.ActionLink("Edit Stylist", "Edit", new { id = Model.StylistId })</p>
+<p>@Html.ActionLink("Delete Stylist", "Delete", new { id = Model.StylistId })</p>
