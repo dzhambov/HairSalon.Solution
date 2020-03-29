@@ -53,13 +53,13 @@ Installing MySQL | MacOS
 * Open MySQL Workbench and select the ```Local instance 3306``` server (it may have a different name). You will need to enter the password you set (We used ```epicodus```). If it connects, you're all set.
  
  MySQL Workbench Database Setup
-  > CREATE DATABASE `to_do_list`;
+  > CREATE DATABASE `hristo_dzhambov`;
 
-  > USE `to_do_list`;
+  > USE `hristo_dzhambov`;
   
-  > CREATE TABLE `categories` (`CategoryId` PRIMARY KEY, `Name` VARCHAR(255));
+  > CREATE TABLE `stylists` (`StylistId` INT PRIMARY KEY NOT NULL AUTO_INCREMENT, `Name` VARCHAR(255) NULL, `Description` VARCHAR(255) NULL);
 
-  > CREATE TABLE `items` (`ItemId` PRIMARY KEY, `Description` VARCHAR(255), `CategoryId` INT));
+  > CREATE TABLE `clients` (`ClientId` INT PRIMARY KEY NOT NULL AUTO_INCREMENT, `Name` VARCHAR(255) NULL, `Description` VARCHAR(255) NULL, `StylistId` INT DEFAULT "0");
 
 _Note For Editors:_ 
 * Download the .NET Core SDK [Software Development Kit](https://dotnet.microsoft.com/download)
