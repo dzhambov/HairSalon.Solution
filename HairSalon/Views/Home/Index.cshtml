@@ -2,6 +2,14 @@
   Layout = "_Layout";
 }
 
-<h1>Welcome to Eau Claire's Salon</h1>
-<p>@Html.ActionLink("See all Stylists", "Index", "Stylists")</p>
-<p>@Html.ActionLink("See all clients", "Index", "Clients")</p> 
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>Welcome to Eau Claire's Salon</h1>
+    </div>
+    <div class="body">
+      <p>@Html.ActionLink("See all Stylists", "Index", "Stylists")</p>
+      <p>@Html.ActionLink("See all clients", "Index", "Clients")</p> 
+    </div>
+  </div>
+</body>
